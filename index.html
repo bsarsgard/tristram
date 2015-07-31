@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tristram</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="media/js/names.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="media/js/monsters.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="media/js/items.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="media/js/spells.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="media/js/synonyms.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="media/js/scripts.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="media/js/markov.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="media/js/pathing.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="media/js/cocos2d-js-v3.6.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="media/js/resource.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="media/js/game.js" charset="UTF-8"></script>
+<style>
+@font-face {
+    font-family: 'DiabloLight';
+    font-style: normal;
+    font-weight: 400;
+    src: local('DiabloLight'), url(media/fonts/diablo-light.ttf) format('woff');
+}
+@font-face {
+    font-family: 'media/fonts/diablo-heavy.ttf';
+    font-style: normal;
+    font-weight: 400;
+    src: local('media/fonts/diablo-heavy.ttf'), url(media/fonts/diablo-heavy.ttf) format('woff');
+}
+@font-face {
+    font-family: 'media/fonts/anironc.ttf';
+    font-style: normal;
+    font-weight: 400;
+    src: local('media/fonts/anironc.ttf'), url(media/fonts/anironc.ttf) format('woff');
+}
+canvas {
+  image-rendering: optimizeSpeed;             /* Older versions of FF          */
+  image-rendering: -moz-crisp-edges;          /* FF 6.0+                       */
+  image-rendering: -webkit-optimize-contrast; /* Safari                        */
+  image-rendering: -o-crisp-edges;            /* OS X & Windows Opera (12.02+) */
+  image-rendering: pixelated;                 /* Awesome future-browsers       */
+  -ms-interpolation-mode: nearest-neighbor;   /* IE                            */
+}
+body {
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  background-color: white;
+  color: black;
+  text-align: center;
+  background-image:url('media/img/ShittyLogo.png');
+  background-repeat:repeat;
+}
+</style>
+</head>
+<body>   
+<h2>This zipped official release appears to only work in FireFox because of security precautions in Chrome and IE. If you are having trouble running the game, please try it at <a href="http://ohshitzombies.com/tristram/">http://ohshitzombies.com/tristram/</a></h2>
+    <canvas id="gameCanvas" width="800" height="450"></canvas>
+    <script type="text/javascript">
+          $(function() {
+              Game.init("gameCanvas");
+              var ctx = document.getElementById('gameCanvas').getContext("2d");
+              ctx.imageSmoothingEnabled = false;
+              ctx.webkitImageSmoothingEnabled = false;
+              ctx.mozImageSmoothingEnabled = false;
+          });
+    </script>
+
+</body>
+</html>

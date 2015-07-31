@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="28" tilewidth="16" tileheight="16" nextobjectid="101">
+ <tileset firstgid="1" name="roguelikeSheet_transparent" tilewidth="16" tileheight="16" spacing="1">
+  <image source="roguelikeSheet_transparent.png" width="968" height="526"/>
+ </tileset>
+ <tileset firstgid="1768" name="roguelikeIndoor_transparent" tilewidth="16" tileheight="16" spacing="1">
+  <image source="roguelikeIndoor_transparent.png" width="457" height="305"/>
+ </tileset>
+ <tileset firstgid="2236" name="roguelikeDungeon_transparent" tilewidth="16" tileheight="16" spacing="1">
+  <image source="roguelikeDungeon_transparent.png" width="492" height="305"/>
+ </tileset>
+ <tileset firstgid="2758" name="roguelikeChar_transparent" tilewidth="16" tileheight="16" spacing="1">
+  <image source="roguelikeChar_transparent.png" width="918" height="203"/>
+ </tileset>
+ <tileset firstgid="3406" name="meta" tilewidth="16" tileheight="16">
+  <image source="meta.png" width="32" height="16"/>
+  <tile id="0">
+   <properties>
+    <property name="Collidable" value="True"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="3408" name="tints" tilewidth="16" tileheight="16">
+  <image source="tints.png" width="16" height="16"/>
+ </tileset>
+ <layer name="Meta" width="50" height="28">
+  <data encoding="base64" compression="zlib">
+   eJztlkEOwCAIBP2AX+v/n9OTCQelVFEWs5P0ooWyQJVSCCGEnOSp/k+UDmR/O74r8z3KfwYdFj9ROiQr/8MtOqSPaGQMvfxa1qjDD63fR3uofTWrA60eszZoOqzzRZbzSq5p8d5WDzQdqzYoOv7O4Kj10LRkn6+s++2dKKxnz9c92bM5iWdMCH3lQZSOF8jAQWk=
+  </data>
+ </layer>
+ <layer name="Terrain" width="50" height="28">
+  <properties>
+   <property name="cc_vertexz" value="-1000"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztV1sOwiAQJGD8qNU7eJLGa9l4K+/h80BiyibDdqm0JrImTDKBLv2Y6SylNaaioqKiomI+1gK7QKku3Y8shRwPU/r5WilwPTnPXHsed2vMNXDn4jFVe1g9PiiDxus7BjZsnKphhqWAGt6aejOQ5jk1DXlIPs5mrFmq0VxLHqTj6Xv9Zgd9BxePF19vhdrWxb1ZCqn9kUvsq66gD8wDe6gH8muk9v2R0s3XcH+UzkN6X+VSSx6oYU5fUU2zj0/9hHNNPvg+//e+2sB3E5HOEzov+Hqr5L2LPvoF58dJUR7ffqtr95H6L9TqQ9K+5L9qv/qxeMALfRNkDQ==
+  </data>
+ </layer>
+ <layer name="Features" width="50" height="28">
+  <properties>
+   <property name="cc_vertexz" value="-999"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMApIB3ZAHMiE4N9Bk1dgYiAKKBKpjlYA5o8uNHfII/FhbpRhZWB4zIIQFwDiVCZM9QMByhkgfhBlhGD0cCXWfUED7A+QHwKp4IbuAfYHCKDnAT0G/HxcYgMJutDSdxOSnCcWNi75gU5X6OAgDvFDBMQGQ7oa6LKGmgA5jyjioHGJgcBApytq1V8Dna5AaaqdEcFPA7LTgTiDEbeewQqokT8GOl3BACx9+TAzMPgBcSAzafoHOl3B8vdAt/OoAZDTlRYwX3wE0slAOpEEvw2GdEWN/DHQ6QobMESjnwLj5hkjdrnBBLyZ8NNOQNoFiEWAbCGoGC56IEELE34a5A8HIOYiAg9mAPIHOxDXEMADCQAl5SNw
+  </data>
+ </layer>
+ <layer name="Features1" width="50" height="28">
+  <properties>
+   <property name="cc_vertexz" value="-998"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztyDEBAAAIw7D5d4JLFAAXX/K1CQAA3+ro6QEAAGwajtgB/A==
+  </data>
+ </layer>
+ <layer name="Features2" width="50" height="28">
+  <properties>
+   <property name="cc_vertexz" value="-997"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt0zEOgCAMQFGiUbiGi4Nx8BBe0kXuoBe0G0g0kYli/ks6tHSgaWoMAAAAAJTVuHu+uPc3jQ77vXfL6C1ttyFik+xkVLyXM/lvJ3kr0Sf1VfEMT7wNEZtljkHxLDn38Rc13TmA+l2xqgjG
+  </data>
+ </layer>
+ <layer name="Features3" width="50" height="28">
+  <data encoding="base64" compression="zlib">
+   eJztzjEBAAAIA6AFsH8LOxrCw0NIQAIAAAA/dV0PAGBnAP98ALo=
+  </data>
+ </layer>
+ <layer name="Features4" width="50" height="28">
+  <data encoding="base64" compression="zlib">
+   eJztzjEBADAMwKDc9a9l+qqh1x5QQAEAV29+DwAAAKAWDnsAwQ==
+  </data>
+ </layer>
+ <objectgroup name="Objects">
+  <object id="1" name="SpawnPoint" x="144" y="432" width="16" height="16"/>
+  <object id="2" name="ShopPoint" x="240" y="336" width="16" height="16"/>
+  <object id="11" name="DungeonPoint" x="304" y="432" width="16" height="16"/>
+  <object id="41" name="Bed" x="64" y="208" width="16" height="16"/>
+  <object id="46" name="Bed" x="112" y="208" width="16" height="16"/>
+  <object id="47" name="Bed" x="160" y="208" width="16" height="16"/>
+  <object id="48" name="Bed" x="192" y="208" width="16" height="16"/>
+  <object id="49" name="Bed" x="240" y="208" width="16" height="16"/>
+  <object id="99" name="ShopkeeperSpeech" x="145" y="225" width="208" height="79"/>
+ </objectgroup>
+ <layer name="Nighttime" width="50" height="28">
+  <data encoding="base64" compression="zlib">
+   eJztz0ENAAAIA7EZwBv+1aBhCc9ecgKaSJLUt/M7BwcHBwcHBwcHBwcHBwdH3wG4fpFR
+  </data>
+ </layer>
+</map>
